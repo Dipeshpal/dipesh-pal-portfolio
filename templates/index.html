@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome Cdn -->
+    <link href="{{ url_for('static', path='/assets/fontawesome-free-6.1.1-web/css/all.min.css') }}" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.min.css">-->
+    <!-- RemixIcon Cdn -->
+    <link href="{{ url_for('static', path='/assets/RemixIcon_Fonts_v2.5.0/fonts/remixicon.css') }}" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="assets/RemixIcon_Fonts_v2.5.0/fonts/remixicon.css">-->
+    <!-- Custom Css -->
+    <link href="{{ url_for('static', path='/assets/css/style.css') }}" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="assets/css/style.css">-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+<!-- ====== ======>> Setting Menu <<====== ====== -->
+<!--<div class="setting" id="setting">-->
+<!--    <div class="settingBtn" id="settinBtn">-->
+<!--        <i class="ri-settings-2-fill ri"></i>-->
+<!--    </div>-->
+
+<!--    <div class="settingMenu">-->
+<!--        <h1 class="tittle">Theme Skin</h1>-->
+<!--        <div class="color_mode">-->
+<!--            <span class="color" id="lg__1"></span>-->
+<!--            <span class="color" id="lg__2"></span>-->
+<!--            <span class="color" id="lg__3"></span>-->
+<!--            <span class="color" id="lg__4"></span>-->
+<!--            <span class="color" id="lg__5"></span>-->
+<!--            <span class="color" id="lg__6"></span>-->
+<!--        </div>-->
+
+<!--        <div class="menuPostion">-->
+<!--            <h2>Menu Position</h2>-->
+<!--            <span class="menu__left" id="menuLTR">LTR</span>-->
+<!--            <span class="menu__right" id="menuRTL">RTL</span>-->
+<!--        </div>-->
+
+<!--        <div class="l-d-Btn">-->
+<!--            <h2>Light/Dark Version</h2>-->
+<!--            <div>-->
+<!--                <span class="light" id="lightTheme"><i class="ri-sun-fill ri"></i></span>-->
+<!--                <input class="light-dark-toggle" id="bgTheme" type="checkbox">-->
+<!--                <span class="dark" id="darkTheme"><i class="ri-moon-fill ri"></i></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- ====== ======>> Navbar Menu <<====== ====== -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav_brand">
+            <a href="#home">Dipesh</a>
+        </div>
+
+        <div class="navRight">
+            <ul class="social_contact">
+                <li><a href="#"><i style="--j:0" class="ri-instagram-line ri"></i></a></li>
+                <li><a href="#"><i style="--j:1" class="ri-dribbble-fill ri"></i></a></li>
+                <li><a href="#"><i style="--j:2" class="ri-github-fill ri"></i></a></li>
+            </ul>
+
+            <div class="toggleBtn" id="toggleBtn">
+                <!-- Menu Toggle Button  -->
+            </div>
+        </div>
+
+        <div class="nav_items" id="navMenu">
+            <ul>
+                <li class="navItem active"><a class="nav_link" href="#home">Home</a></li>
+                <li class="navItem"><a class="nav_link" href="#about">About</a></li>
+                <li class="navItem"><a class="nav_link" href="#service">Extras</a></li>
+                <li class="navItem"><a class="nav_link" href="#experience_work">Experience</a></li>
+                <li class="navItem"><a class="nav_link" href="#projects">Projects</a></li>
+                <li class="navItem"><a class="nav_link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- ====== ======>> Home Section <<====== ====== -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content" id="home_content">
+                <h1 class="title">
+                    <span class="titleLight">Dipesh </span>
+                    <span class="titleBold">Paul</span>
+                </h1>
+                <p class="proff">Machine Learning Engineer</p>
+                <p class="text homeText">Experienced data scientist skilled in building data-intensive applications
+                    using predictive modeling, data processing, and Python,
+                    able to translate business goals into deliverables.</p>
+
+                <div class="btns">
+                    <button onclick="location.href='#about'" class="home_button btn">About</button>
+                    <button onclick="location.href='#contact'" class="home_button btn">Contact</button>
+                </div>
+
+                <a href="#about" class="scrollDownBtn">
+                    <i class="ri-arrow-down-s-line ri"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="info">
+                <h1 class="title aboutTitle">About Me</h1>
+                <p class="text_lg">I'm Developer- specialized in Machine Learning.</p>
+                <p class="text aboutText">Through my 4 years of my career I have real world exposer of projects,
+                    client interaction, team management, architecture designing. I am able to provide high quality
+                    services.</p>
+                <div class="sign">
+                    <!--                    <img src="{{ url_for('static', path='/assets/img/sign.png') }}">-->
+                    <!--                    <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg"-->
+                    <!--                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="177.857px" height="53.332px"-->
+                    <!--                         viewBox="0 0 177.857 53.332" enable-background="new 0 0 177.857 53.332" xml:space="preserve">-->
+                    <!--                            <path d="M37.475,2.905c8.747,3.162,20.57,3.318,28.105-2.818c0.293-0.239-0.113-0.396-0.326-0.364-->
+                    <!--                                            C54.86,1.299,46.902,10.385,39.907,17.469C29.35,28.16,19.467,40.063,7.36,49.058c-1.436,1.066-6.873,5.725-6.863,1.467-->
+                    <!--                                            c0.005-2.354,1.406-4.925,2.396-6.955c2.015-4.134,4.428-8.104,7.089-11.847c5.232-7.355,14.23-15.878,24.063-13.738-->
+                    <!--                                            c2.1,0.457,4.414,1.448,6.613,1.173c2.281-0.286,3.02-1.62,1.748,0.827c-0.199,0.383,0.478,0.283,0.645,0.225-->
+                    <!--                                            c2.318-0.825,2.938-0.577,4.692,0.982c0.206,0.184,0.664,0.087,0.837-0.104c5.516-6.108,9.623-13.315,13.729-20.405-->
+                    <!--                                            c0.235-0.406-0.738-0.314-0.902-0.031c-3.861,6.657-7.699,13.631-10.312,20.893c-1.098,3.051,0.547,3.982,3.314,4.301-->
+                    <!--                                            c4.53,0.521,9.699-0.026,14.05-1.316c1.743-0.517,3.2-1.436,4.411-2.771c0.493-0.544,0.679-1.152,0.942-1.815-->
+                    <!--                                            c0.84-2.114,3.397-3.196,5.331-4.113c1.968-0.934,4.143-1.551,6.016-2.675c2.146-1.288,4.488-3.19,7.177-2.801-->
+                    <!--                                            c1.955,0.283,4.069,1.687,5.804,2.554c8.129,4.061,16.551,7.369,25.197,10.147c17.638,5.666,36.011,8.735,54.225,11.883-->
+                    <!--                                            c0.318,0.055,1.142-0.443,0.588-0.539c-23.535-4.067-47.159-8.247-69.349-17.403c-5.064-2.09-9.821-4.912-14.915-6.899-->
+                    <!--                                            c-1.625-0.633-3.053-0.428-4.631,0.132c-3.582,1.27-6.982,3.629-10.5,5.185c-2.332,1.031-4.754,2.272-6.017,4.574-->
+                    <!--                                            c-0.229,0.418,0.74,0.309,0.902,0.031c0.357-0.613,0.31-0.405,0.366-1.073c0.034-0.412-0.904-0.211-0.968,0.115-->
+                    <!--                                            c-1.18,6.041-9.062,5.984-13.961,6.277c-2.012,0.12-7.457,0.698-7.374-2.405c0.07-2.626,2.054-5.599,3.091-7.853-->
+                    <!--                                            c1.511-3.284,3.157-6.504,4.86-9.692c0.289-0.527,0.578-1.055,0.868-1.582c1.251-0.997,1.311-1.643,0.18-1.938-->
+                    <!--                                            c-0.752,1.299-1.513,2.593-2.276,3.886c-1.631,2.76-3.343,5.467-5.133,8.127c-1.258,1.87-4.3,7.622-6.656,4.932-->
+                    <!--                                            c-0.114-0.131-0.371-0.102-0.515-0.061c-2.286,0.655-3.024,1.449-1.481-1.066c0.25-0.408-0.604-0.259-0.753-0.168-->
+                    <!--                                            c-4.219,2.564-7.864-0.399-11.966-0.556c-2.549-0.097-4.796,0.571-7.176,1.451c-6.066,2.243-10.872,7.137-14.785,12.103-->
+                    <!--                                            C7.593,33.52-4.546,49.827,0.808,53.571c0.185,0.129,0.516,0.008,0.685-0.087c15.306-8.641,25.91-23.107,38.42-35.065-->
+                    <!--                                            c6.19-5.917,11.819-12.387,19.556-16.382c1.703-0.879,6.24-1.983,1.456,0.299c-2.313,1.104-4.943,1.533-7.457,1.852-->
+                    <!--                                            C48.402,4.83,43.031,4.159,38.24,2.427C37.938,2.318,37.063,2.756,37.475,2.905L37.475,2.905z"/>-->
+                    <!--                        </svg>-->
+                </div>
+            </div>
+
+            <div class="skills">
+                <h1 class="title">Skills & abilities</h1>
+                <ul class="skill__bars">
+                    <li style="--i:0" class="prgress__bar">Machine Learning</li>
+                    <li style="--i:1" class="prgress__bar">Deep Learning</li>
+                    <li style="--i:2" class="prgress__bar">Python</li>
+                    <li style="--i:3" class="prgress__bar">Tensorflow</li>
+                    <li style="--i:4" class="prgress__bar">Transformers</li>
+                    <li style="--i:5" class="prgress__bar">Machine Vision</li>
+                    <li style="--i:6" class="prgress__bar">Natural Language Processing</li>
+                    <li style="--i:7" class="prgress__bar">Git, Jira</li>
+                    <li style="--i:8" class="prgress__bar">FastAPI</li>
+                    <li style="--i:9" class="prgress__bar">Docker</li>
+                    <li style="--i:10" class="prgress__bar">Jenkins</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ======>> Service Section <<====== ====== -->
+    <section class="service" id="service">
+        <div class="icons">
+            <img class="icons_img" src="assets/img/icon1.png" alt="">
+            <img class="icons_img" src="assets/img/icon2.png" alt="">
+            <img class="icons_img" src="assets/img/icon3.png" alt="">
+            <img class="icons_img" src="assets/img/icon4.png" alt="">
+            <img class="icons_img" src="assets/img/icon1.png" alt="">
+        </div>
+
+        <div class="container">
+            <div class="experience">
+                <h1 class="exp_title">4+</h1>
+                <p class="exp_text">Years <br> Experience Working</p>
+            </div>
+
+            <div class="content">
+                <h1 class="title">Machine Learning Engineer, certified in <br> <a style="color: orange"
+                                                                                  href="https://www.coursera.org/account/accomplishments/verify/4BQX7D9TNVV2">Machine
+                    Learning from Stanford University</a></h1>
+                <div class="card_container">
+                    <div class="card_row">
+                        <div class="card about_card">
+                            <i class="fa-solid fa-cloud-bolt card_icon"></i>
+                            <p class="card_title">Open Source Project</p>
+                            <p class="text">
+                            <span>
+                            <a href="https://github.com/Dipeshpal?tab=repositories"
+                               target="_blank" style="color: white">Discover More</a></span>
+                                <i class="fa-solid fa-arrow-right-long fa"></i>
+                            </p>
+                        </div>
+
+                        <div class="card about_card">
+                            <i class="fa-solid fa-box card_icon"></i>
+                            <a href="https://jarvisai.in/" target="_blank" style="color: white" class="card_title">Created
+                                <br> Virtual Assistant Library</a>
+                        </div>
+
+                        <div class="card about_card">
+                            <i class="fa-solid fa-layer-group card_icon"></i>
+                            <a href="https://medium.com/@dipeshpal17" target="_blank" style="color: white"
+                               class="card_title">Blogs <br> About Cutting Edge Technologies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ======>> Experience Section <<====== ====== -->
+    <section class="experience_work" id="experience_work">
+        <div class="container">
+            <div class="info">
+                <h2 class="header_title" style="color: #f09819; font-size: 5rem">Work Experience</h2>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Great Software Laboratory (GS Lab),
+                        Pune, Maharashtra</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Data Scientist</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">Jan 2022 - Present</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Machine Learning Engineer with
+                        huge experience in Python, and it's framework like FastAPI,
+                        Django, Tensorflow etc.</em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Calsoft Private Limited, Pune,
+                        Maharashtra</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Data Scientist</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">July 2019 - Jan 2022</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Innovative and deadline-driven
+                        Data Scientist with 3 years of experience in Machine
+                        Learning.</em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Calsoft Private Limited, Pune,
+                        Maharashtra</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Data Scientist Intern</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">Jan 2019 - June 2019</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Completed 6 Months of internship
+                        Machine Learning.</em></p>
+                </div>
+            </div>
+
+            <div class="info">
+                <h2 class="header_title" style="color: #f09819; font-size: 5rem">Education</h2>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Bachelor of Engineering, Indore,
+                        Madhya Pradesh</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">RGPV University</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">2015 - 2019 | Computer Science</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Acropolis Institute Of Technology
+                        And Research - AITR</em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">PCM, M.P. Board</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">MP Board</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">2015</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Karnataka Vidya Niketan</em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Highschool</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">MP Board</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem">2013</p>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Adarsh Shishu Vihar H. S.
+                        School</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience_work" id="projects">
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="info">
+                <h2 class="header_title" style="color: #f09819; font-size: 5rem">Projects</h2>
+
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Automation of
+                        Virtualization</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Technology Used: Python, FastAPI, AI/ML,
+                        Tensorflow, Jenkins, Docker, Transformers.</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Create tool for automate
+                        virtualization solution, and providing PAAS service to customer. This tool will be used by
+                        customer
+                        to create virtual machine, and deploy application on it. This tool will also provide monitoring
+                        and
+                        troubleshooting service to customer. This tool will also provide AI/ML based price prediction to
+                        customer.</em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Price Analysis with
+                        Scraping</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Technology Used: Python, FastAPI, AI/ML,
+                        Tensorflow, Jenkins, Docker, Scrapy, Transformers.</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Scraped data for pricing
+                        strategies for laptops, desktops, and gaming devices and build an ML model for price prediction.
+                        Collected data from various E-Commerce and OEM websites across the globe.
+                    </em></p>
+                </div>
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Ticket Analyzer</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Technology Used: Python, Kafka, Docker,
+                        FastAPI, AI/ML, Fastai.</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Automate the ticketing tool, with
+                        the help of Machine Learning. Where technologies like NLP and Wikipedia trained ULMfit Fastai
+                        models are used to fine-tune our Ticket dataset and to find out the ticket and assigned person.
+                    </em></p>
+                </div>
+
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Oil Price Prediction</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Skill Used: Python, Kafka, Plotly, Docker,
+                        AI/ML with Fastai and Tensorflow</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>The goal is to analyze the growth
+                        of markets like refineries, stock, etc. with the help of user reviews, sentiment, and comments.
+                        By using Fastai and Keras with Facebook's Roberta, LSTM, ULMFit, etc. to fine-tune the model.
+                    </em></p>
+                </div>
+
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Avatar Generator</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Skill Used: Python, AI/ML, Tensorflow,
+                        OpenCV, DZone</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Create avatars for human faces for
+                        the portfolio. Trained the model using the images dataset of approximately 143,000 images of
+                        Humans and Cartoons. Many different architectures of Neural Networks, Deep Convolutional GANs
+                        (Style GAN), CNN, UNet to train the model.
+                    </em></p>
+                </div>
+
+
+                <div class="content">
+                    <br>
+                    <h5 class="header_title" style="color: white; font-size: 2rem">Title: Steel Defect Detection</h5>
+                    <h3 class="title" style="color: white; font-size: 2rem">Skill Used: Python, FastAPI, AI/ML, Fastai,
+                        and Keras</h3>
+                    <p class="header_title" style="color: white; font-size: 2rem"><em>Detection of steel sheet defects
+                        needs to find using Machine Learning, this automation approach leads the industry to
+                        high-quality steel production. Build the custom CNN model with U-Net and using Keras. This
+                        automation is run as a web app build with FastAPI.
+                    </em></p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--    <section class="blog" id="blog">-->
+    <!--        <div class="container">-->
+    <!--            <div class="blog_header">-->
+    <!--                <h1 class="header_title">Out Work, successfull <br> client products</h1>-->
+    <!--                <div class="header_text">-->
+    <!--                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Tempore, ipsum</p>-->
+    <!--                    <a href="#" class="link">-->
+    <!--                        Explore more-->
+    <!--                        <i class="fa-solid fa-arrow-right-long fa"></i>-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--            <div class="content">-->
+    <!--                <div class="card blog_card">-->
+    <!--                    <img src="assets/img/blog1.png" alt="">-->
+    <!--                </div>-->
+
+    <!--                <div class="card blog_card">-->
+    <!--                    <img src="assets/img/blog2.png" alt="">-->
+    <!--                </div>-->
+
+    <!--                <div class="card blog_card">-->
+    <!--                    <img src="assets/img/blog3.jpg" alt="">-->
+    <!--                </div>-->
+
+    <!--                <div class="card blog_card">-->
+    <!--                    <img src="assets/img/blog4.jpg" alt="">-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <!--    <section class="testimonial" id="client">-->
+    <!--        <div class="container">-->
+    <!--            &lt;!&ndash; Swiper &ndash;&gt;-->
+    <!--            <div class="swiper mySwiper">-->
+    <!--                <div class="swiper-wrapper">-->
+    <!--                    <div class="swiper-slide">-->
+    <!--                        <div class="client">-->
+    <!--                            <div class="profile">-->
+    <!--                                <img src="assets/img/client1.jpg" alt="">-->
+    <!--                            </div>-->
+
+    <!--                            <div class="content">-->
+    <!--                                <i class="fa-solid fa-quote-left fa"></i>-->
+    <!--                                <p class="msg">-->
+    <!--                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi nihil-->
+    <!--                                    cupiditate numquam est reiciendis voluptas accusamus consectetur, vitae aperiam,-->
+    <!--                                    tenetur consequuntur iste voluptatem illum.-->
+    <!--                                </p>-->
+    <!--                                <p class="name">Dwaney Jhonson</p>-->
+    <!--                                <p class="clientProff">Actor</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="swiper-slide">-->
+    <!--                        <div class="client">-->
+    <!--                            <div class="profile">-->
+    <!--                                <img src="assets/img/client1.jpg" alt="">-->
+    <!--                            </div>-->
+
+    <!--                            <div class="content">-->
+    <!--                                <i class="fa-solid fa-quote-left fa"></i>-->
+    <!--                                <p class="msg">-->
+    <!--                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi nihil-->
+    <!--                                    cupiditate numquam est reiciendis voluptas accusamus consectetur, vitae aperiam,-->
+    <!--                                    tenetur consequuntur iste voluptatem illum.-->
+    <!--                                </p>-->
+    <!--                                <p class="name">Dwaney Jhonson</p>-->
+    <!--                                <p class="clientProff">Actor</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="swiper-slide">-->
+    <!--                        <div class="client">-->
+    <!--                            <div class="profile">-->
+    <!--                                <img src="assets/img/client1.jpg" alt="">-->
+    <!--                            </div>-->
+
+    <!--                            <div class="content">-->
+    <!--                                <i class="fa-solid fa-quote-left fa"></i>-->
+    <!--                                <p class="msg">-->
+    <!--                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quasi nihil-->
+    <!--                                    cupiditate numquam est reiciendis voluptas accusamus consectetur, vitae aperiam,-->
+    <!--                                    tenetur consequuntur iste voluptatem illum.-->
+    <!--                                </p>-->
+    <!--                                <p class="name">Dwaney Jhonson</p>-->
+    <!--                                <p class="clientProff">Actor</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+
+    <!--                <div class="swiper-pagination"></div>-->
+    <!--            </div>-->
+
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="left_content">
+                <h1 class="title">Let's Connect</h1>
+                <div class="social_contact">
+                    <ul>
+                        <li class="contact_icons"><a href="https://www.instagram.com/_dipeshpal_"><i
+                                class="fa-brands fa-instagram fa"></i></a></li>
+                        <li class="contact_icons"><a href="https://www.facebook.com/dipeshpal17/"><i
+                                class="fa-brands fa-facebook-f fa"></i></a></li>
+                        <li class="contact_icons"><a href="https://twitter.com/Dipesh17pal"><i
+                                class="fa-brands fa-twitter fa"></i></a></li>
+                    </ul>
+                </div>
+                <a href="#" class="link e_link">
+                    Explore more
+                    <i class="fa-solid fa-arrow-right-long fa"></i>
+                </a>
+            </div>
+
+            <div class="right_content">
+                <h1 class="title">Let's message me and make something together</h1>
+                <h1 class="title">Email me at- <br> dipeshpal17@gmail.com</h1>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <a class="brand footer_brand">
+            DIPESH
+        </a>
+
+        <ul class="social_contact">
+            <li class="footer_link"><a href="https://www.youtube.com/channel/UCGEoRAK92fUk2kY3kSJMR_Q"><i
+                    class="fa-brands fa-youtube fa"></i></a>
+            </li>
+            <li class="footer_link"><a href="https://www.instagram.com/_dipeshpal_"><i
+                    class="fa-brands fa-instagram fa"></i></a></li>
+            <li class="footer_link"><a href="https://www.facebook.com/dipeshpal17/"><i
+                    class="fa-brands fa-facebook-f fa"></i></a></li>
+            <li class="footer_link"><a href="https://twitter.com/Dipesh17pal"><i
+                    class="fa-brands fa-twitter fa"></i></a></li>
+            <li class="footer_link"><a href="https://github.com/Dipeshpal"><i class="fa-brands fa-github fa"></i></a>
+            </li>
+            <li class="footer_link"><a href="linkedin.com/in/dipesh-paul/"><i
+                    class="fa-brands fa-linkedin-in fa"></i></a></li>
+        </ul>
+
+        <p class="copyright_msg">
+            Copyright © 2023. Template has been designed by <a
+                href="https://www.instagram.com/_dipeshpal_">@_dipeshpal_</a>
+        </p>
+    </div>
+</footer>
+
+<div class="scrollUp" id="scrollUp">
+    <a href="#home">
+        <i class="fa-solid fa-arrow-up-long fa" id="scrollupBtn"></i>
+    </a>
+</div>
+
+<!-- Scroll Reveal Animation -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Custom Javascript -->
+<!--<script src="assets/js/script.js"></script>-->
+<script src="{{ url_for('static', path='/assets/js/script.js') }}"></script>
+</body>
+</html>
