@@ -15,3 +15,8 @@ templates = Jinja2Templates(directory="templates")
 async def read_item(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+
+@app.get("/social", response_class=HTMLResponse)
+async def social_links(request: Request):
+    return templates.TemplateResponse("links.html", {"request": request})
+
