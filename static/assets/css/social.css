@@ -299,8 +299,8 @@ a:active {
       color: hsl(190deg, 10%, 95%);
       font-style: bold;
       align-items: center;
-    justify-content: center;
-    text-align: center;
+      justify-content: center;
+      text-align: center;
 
    }
 }
