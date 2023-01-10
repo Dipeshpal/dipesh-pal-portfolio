@@ -227,26 +227,26 @@ a:active {
 }
 @media only screen and (max-width: 600px) {
   .buttons-container {
-    width: 50%;
+    width: 100%;
     height: auto;
     flex-wrap:wrap;
   }
 
   .buttons-container2 {
-     width: 50%;
+     width: 100%;
      height: auto;
      flex-wrap:wrap;
-}
+  }
 
-buttons-container3 {
-     width: 50%;
+  .buttons-container3 {
+     width: 100%;
      height: auto;
      flex-wrap:wrap;
-}
+  }
   button {
-    width: 90%;
-    padding: 1em 1em;
-    font-size: 0.8rem;
+    width: 100%;
+    padding: 0em 0em;
+    font-size: 0.5rem;
   }
 
   .circle-profile__name h1 {
@@ -255,29 +255,52 @@ buttons-container3 {
         font-size: 2.5em !important;
         margin-bottom: 10px;
         font-weight: auto;
-         font-style: italic;
-         color: #fff;
+        font-style: italic;
+        color: #fff;
     }
 
-   html {
+  html {
       height: 100%;
       font-family: 'Arca Majora 3'
       background-color: #fff !important;
-    color: #2b2a2a;
-   }
+      color: #2b2a2a;
+  }
 
    body {
       height: 100%;
       font-family: 'Arca Majora 3'
       background-color: #fff !important;
-    color: #2b2a2a;
+      color: #2b2a2a;
    }
+
+    .circle-profile__image {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
 }
- @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
    .button-arounder {
       --radius: 12px;
       font-size: 1.5rem;
       font-style: normal !important;
-      margin: 1em;
+      margin: auto;
+      width: 80%;
+      font-style: normal;
+      padding: 0.2em;
+       margin: 0.5em;
+      -ms-transform: skewX(-20deg);
+      -webkit-transform: skewX(-20deg);
+      transform: skewX(-20deg);
+      font-size: 2rem;
+      background: #ab2631;
+      color: hsl(190deg, 10%, 95%);
+      font-style: bold;
+      align-items: center;
+    justify-content: center;
+    text-align: center;
+
    }
 }
